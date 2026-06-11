@@ -2,7 +2,7 @@
 
 A clean, minimalist, and highly polished user interface for Home Assistant. This theme focuses on soft neumorphic shadows, subtle gradients, and high scannability to bring a premium, modern feel to your smart home dashboard.
 
-![Uploading Captura de pantalla 2026-06-11 a las 18.18.44.png…]()
+![Light mode](https://github.com/josekso/Modern/blob/main/Modo-claro.jpg)
 
 
 ## 🌟 Features
