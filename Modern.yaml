@@ -1,0 +1,164 @@
+Modern:
+  # ==========================================
+  # 1. PARÁMETROS GLOBALES (Estructura, Bordes y Tipografía)
+  # ==========================================
+  # Fuentes modernas (Reemplazan por completo las obsoletas paper-font)
+  primary-font-family: "Google Sans, figtree"
+  ha-font-family-body: "var(--primary-font-family)"
+  ha-card-header-font-family: "var(--primary-font-family)"
+  
+  # Tamaños y pesos específicos para Heading Cards de Home Assistant
+  ha-heading-card-subtitle-font-size: "14px"
+  ha-heading-card-subtitle-font-weight: "var(--ha-font-weight-bold)"
+  ha-heading-card-subtitle-line-height: "20px"
+  ha-heading-card-title-font-size: "16px"
+  ha-heading-card-title-font-weight: "var(--ha-font-weight-bold)"
+  ha-heading-card-title-line-height: "24px"
+
+  # Estructura de rejilla y espaciados de secciones modernas
+  ha-view-sections-row-gap: "18px"
+
+  # Dimensiones y esquinas globales del sistema
+  ha-border-radius: "34px"
+  ha-border-radius-xl: "34px"
+  ha-card-border-radius: "28px"
+  ha-card-border-width: "0px"
+  ha-config-card-border-radius: "28px"
+  button-border-radius: "8px"
+  ha-border-radius-lg: "30px"
+  input-outlined-border-radius: "8px"
+
+  # Colores globales iniciales basados en HSL (Estilo Pastel)
+  primary-color: "hsl(210 80% 50%)"
+  accent-color: "var(--primary-color)"
+  
+  # Barra superior en modo edición
+  app-header-edit-background-color: "hsl(0 0% 0%)"
+
+  modes:
+    # ==========================================
+    # 2. CONFIGURACIÓN MODO CLARO
+    # ==========================================
+    light:
+      # Color general e Interfaz
+      primary-text-color: "hsl(210 0% 0%)"
+      secondary-text-color: "hsl(210 0% 40%)"
+      disabled-text-color: "#BDBDBD"
+      primary-background-color: "#eeeeee"
+      secondary-background-color: "#eeeeee"
+      divider-color: "#E0E0E0"
+      
+      # Cabecera (Header)
+      app-header-background-color: "#eeeeee"
+      app-header-text-color: "var(--primary-text-color)"
+      
+      # Menú Lateral (Sidebar)
+      sidebar-background-color: "var(--primary-background-color)"
+      sidebar-text-color: "var(--primary-text-color)"
+      sidebar-icon-color: "var(--primary-text-color)"
+      sidebar-selected-background-color: "#F0F0F0"
+      sidebar-selected-text-color: "var(--primary-color)"
+      sidebar-selected-icon-color: "var(--primary-color)"
+
+      # Tarjetas (Tus estados base + variables nativas de respaldo)
+      card-background-color: "hsl(0 0% 100%)"
+      ha-card-background: "var(--card-background-color)"
+      ha-card-border-color: "hsl(0 0% 100%)"
+      ha-card-box-shadow: "0 2px 12px 0 rgba(0,0,0,0.1),0 2px 4px 0 rgba(0,0,0,0.04)"
+      
+      # Iconos y Controles nativos
+      state-icon-color: "#424242"
+      state-icon-active-color: "var(--primary-color)"
+      state-icon-unavailable-color: "#BDBDBD"
+      input-fill-color: "#FAFAFA"
+      input-text-color: "#212121"
+      switch-checked-button-color: "var(--primary-color)"
+      
+      # Estados dinámicos para Card-Mod
+      card-on: "hsl(0 0% 100%)"
+      card-off: "#dddddd99"
+      card-unabailable: "hsl(0 40% 90%)"
+      
+    # ==========================================
+    # 3. CONFIGURACIÓN MODO OSCURO
+    # ==========================================
+    dark:
+      # Color general e Interfaz
+      primary-text-color: "hsl(210 0% 100%)"
+      secondary-text-color: "hsl(210 0% 70%)"
+      disabled-text-color: "#727272"
+      primary-background-color: "#000000"
+      secondary-background-color: "#000000"
+      divider-color: "#333333"
+      state-inactive-color: "hsl(0 0% 20%)"
+      
+      # Cabecera (Header) e integración móvil
+      app-header-background-color: "#000000"
+      app-header-text-color: "#FFFFFF"
+      android-mobile-statusbar-color: "#000000"
+      app-header-edit-background-color: "hsl(0 0% 10%)"
+      
+      # Menú Lateral (Sidebar)
+      sidebar-background-color: "#000000"
+      sidebar-text-color: "var(--primary-text-color)"
+      sidebar-icon-color: "#A0A0A0"
+      sidebar-selected-background-color: "#1A1A1A"
+      sidebar-selected-text-color: "var(--primary-color)"
+      sidebar-selected-icon-color: "var(--primary-color)"
+
+      # Tarjetas (Tus estados base + variables nativas de respaldo)
+      card-background-color: "hsl(0 0% 10%)"
+      ha-card-background: "var(--card-background-color)"
+      ha-card-border-color: "hsl(0 0% 15%)"
+      ha-card-box-shadow: "inset 0 0 3px #ffffff50"
+      
+      # Iconos y Controles nativos
+      state-icon-color: "#666666"
+      state-icon-active-color: "var(--primary-color)"
+      state-icon-unavailable-color: "#424242"
+      control-switch-off-color: "#000"
+      input-fill-color: "#1A1A1A"
+      input-text-color: "#FFFFFF"
+      switch-checked-button-color: "var(--primary-color)"
+
+      # Estados dinámicos para Card-Mod
+      card-on: "hsl(0 0% 14%)"
+      card-off: "hsl(0 0% 7%)"
+      card-unabailable: "hsl(0 100% 10%)"
+      
+  # ==========================================
+  # 4. INYECCIÓN CARD-MOD (Comportamiento Lógico)
+  # ==========================================
+  card-mod-theme: "Modern"
+  card-mod-card: |
+    ha-card {
+      {% if is_state(config.entity, 'off') %}
+        background: var(--card-off);
+        backdrop-filter: blur(5px);
+        box-shadow: none;
+        color: gray;
+      {% elif is_state(config.entity, 'on') %}
+        background-color: var(--card-on);
+        box-shadow: 0 2px 14px -3px rgba(0,0,0,.1);
+        color: var(--state-color, var(--tile-color));
+      {% elif is_state(config.entity, 'unavailable') %}
+        background: var(--card-unabailable);
+        box-shadow: none;
+        color: red;
+        pointer-events: none;
+      {% else %}
+        background: var(--card-on);
+        color: var(--state-color, var(--tile-color));
+      {% endif %}
+    }
+    ha-state-icon {
+      {% if is_state(config.entity, 'off') %}
+        color: gray !important;
+      {% elif is_state(config.entity, 'on') %}
+        color: var(--state-color, var(--tile-color));
+      {% elif is_state(config.entity, 'unavailable') %}
+        color: red !important;
+      {% else %}
+        color: gray !important;
+      {% endif %}
+    }
