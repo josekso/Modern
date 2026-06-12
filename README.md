@@ -15,7 +15,6 @@ A clean, minimalist, and highly polished user interface for Home Assistant. This
   * **🚨 Error / Unavailable Status:** Cards change to a soft red background when a device hits an error or goes unavailable, allowing for immediate troubleshooting.<br>
 ![Error button](https://github.com/josekso/Modern/blob/main/error.png)
 * **Dual Mode:** Seamless support for both **Light** and **Dark** modes.
-* **Dual Mode:** Seamless support for both **Light** and **Dark** modes.
 * **Neumorphic Depth:** Beautifully crafted card shadows and soft background contrasts.
 * **Card-Mod Power:** Leveraging `card-mod` to fine-tune states, sliders, and borders for a cohesive layout.
 * **Optimized Typography:** Designed to look stunning with modern, geometric sans-serif typefaces.
