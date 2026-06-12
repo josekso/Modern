@@ -1,9 +1,8 @@
+![Modern Theme](https://github.com/josekso/Modern/blob/main/Modern-theme.png)
+
 # Modern Theme for Home Assistant
 
 A clean, minimalist, and highly polished user interface for Home Assistant. This theme focuses on soft neumorphic shadows, subtle gradients, and high scannability to bring a premium, modern feel to your smart home dashboard.
-
-![Light mode](https://github.com/josekso/Modern/blob/main/light-mode.png)
-![Dark mode](https://github.com/josekso/Modern/blob/main/dark-mode.png)
 
 
 ## 🌟 Features
@@ -37,6 +36,9 @@ To ensure all elements, custom states, and styling render exactly as shown in th
 1.  **Card-mod** by `@thomasloven` (Available in HACS).
 
 ---
+
+![Light mode](https://github.com/josekso/Modern/blob/main/light-mode.png)
+![Dark mode](https://github.com/josekso/Modern/blob/main/dark-mode.png)
 
 ## 🚀 Installation
 
