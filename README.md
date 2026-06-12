@@ -37,9 +37,6 @@ To ensure all elements, custom states, and styling render exactly as shown in th
 
 ---
 
-![Light mode](https://github.com/josekso/Modern/blob/main/light-mode.png)
-![Dark mode](https://github.com/josekso/Modern/blob/main/dark-mode.png)
-
 ## 🚀 Installation
 
 ### Option 1: Custom Repository (HACS)
@@ -56,3 +53,10 @@ To ensure all elements, custom states, and styling render exactly as shown in th
    ```yaml
    frontend:
      themes: !include_dir_merge_named themes
+
+---
+
+## 📷 Captures
+   
+![Light mode](https://github.com/josekso/Modern/blob/main/light-mode.png)
+![Dark mode](https://github.com/josekso/Modern/blob/main/dark-mode.png)
