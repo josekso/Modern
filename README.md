@@ -11,7 +11,7 @@ A clean, minimalist, and highly polished user interface for Home Assistant. This
 * **Advanced State Contrast (New):** Cards intuitively shift appearance based on their state to dramatically improve visibility:
   * **ON / Active:** The card turns crisp white, making active devices immediately pop out.
   * **OFF / Inactive:** The card blends softly with a shaded background, cleanly receding into the layout.
-![Light buttons](https://github.com/josekso/Modern/blob/main/botones-claro.jpg) ![Dark buttons](https://github.com/josekso/Modern/blob/main/botones-oscuro.jpg)
+![Light buttons](https://github.com/josekso/Modern/blob/main/buttons-light.png) ![Dark buttons](https://github.com/josekso/Modern/blob/main/buttons-dark.png)
 * **Dual Mode:** Seamless support for both **Light** and **Dark** modes.
 * **Neumorphic Depth:** Beautifully crafted card shadows and soft background contrasts.
 * **Card-Mod Power:** Leveraging `card-mod` to fine-tune states, sliders, and borders for a cohesive layout.
