@@ -33,11 +33,11 @@ For the ultimate visual experience, this theme is optimized to work with the fol
 
 ---
 
-## 🛠️ Prerequisites & Dependencies
+## ⚠️ Prerequisites & Dependencies  
 
-To ensure all elements, custom states, and styling render exactly as shown in the screenshots, you **must install** the following frontend plugin via HACS:
-
-1.  **Card-mod** by `@thomasloven` (Available in HACS).
+> [!IMPORTANT]  
+> To ensure all elements, custom states, and styling render exactly as shown in the screenshots, you **must install** the following frontend plugin via HACS:
+> 1.  **Card-mod** by `@thomasloven` (Available in HACS).  
 
 ---
 
