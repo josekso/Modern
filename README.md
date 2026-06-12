@@ -13,7 +13,7 @@ A clean, minimalist, and highly polished user interface for Home Assistant. This
   * **OFF / Inactive:** The card blends softly with a shaded background, cleanly receding into the layout.
 ![Light buttons](https://github.com/josekso/Modern/blob/main/buttons-light.png) ![Dark buttons](https://github.com/josekso/Modern/blob/main/buttons-dark.png)
   * **🚨 Error / Unavailable Status:** Cards change to a soft red background when a device hits an error or goes unavailable, allowing for immediate troubleshooting.<br>
-![Light buttons](https://github.com/josekso/Modern/blob/main/error-light.png) ![Dark buttons](https://github.com/josekso/Modern/blob/main/error-dark.png)
+![Error button](https://github.com/josekso/Modern/blob/main/error.png)
 * **Dual Mode:** Seamless support for both **Light** and **Dark** modes.
 * **Dual Mode:** Seamless support for both **Light** and **Dark** modes.
 * **Neumorphic Depth:** Beautifully crafted card shadows and soft background contrasts.
