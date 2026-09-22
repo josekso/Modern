@@ -82,7 +82,7 @@ Modern:
       # Estados dinámicos para Card-Mod
       card-on: "hsl(0 0% 100%)"
       card-off: "#dddddd99"
-      card-unabailable: "hsl(0 40% 90%)"
+      card-unavailable: "hsl(0 40% 90%)"
       
     # ==========================================
     # 3. CONFIGURACIÓN MODO OSCURO
@@ -129,7 +129,7 @@ Modern:
       # Estados dinámicos para Card-Mod
       card-on: "hsl(0 0% 14%)"
       card-off: "hsl(0 0% 7%)"
-      card-unabailable: "hsl(0 100% 10%)"
+      card-unavailable: "hsl(0 100% 10%)"
       
   # ==========================================
   # 4. INYECCIÓN CARD-MOD (Comportamiento Lógico)
@@ -147,7 +147,7 @@ Modern:
         box-shadow: 0 2px 14px -3px rgba(0,0,0,.1);
         color: var(--state-color, var(--tile-color));
       {% elif is_state(config.entity, 'unavailable') %}
-        background: var(--card-unabailable);
+        background: var(--card-unavailable);
         box-shadow: none;
         color: red;
         pointer-events: none;
